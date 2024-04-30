@@ -1,0 +1,6 @@
+In this part we have continued the part 3b. First we have normalized the amount of CO2 for all countries so that all the values come in between 0 and 1. Since the initial dates for all countires were different (some countires had data from 1750 while some had from 18xx). Thus, we started the count of all countires from 1900 to 2014 in order to make the starting point of all countries same.
+
+Once we normalized all the data, now we have to cluster them. We use the algorithm that first we declared the cluster centers. In this case, we used India, China and USA (highest polluters of world) as cluster centers. Then we calculated the DTW distance of all other countries from these 3 cluster centers. Once we had all the distances, we then used KNN to find that which country belongs to which cluster center and we stored this in a list.
+No library is used in this code thats why the code is stretching around 800 lines.
+
+Then we plotted all the countries that belong to all the 3 cluster centers.
